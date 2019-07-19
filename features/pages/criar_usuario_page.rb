@@ -18,7 +18,7 @@ class User <SitePrism::Page
         universidade.set 'PUC'
         profissao.set 'Qa'
         genero.set 'Masculino'
-        idade.set '21'
+        idade.set '22'
         criar.click
     end
 
