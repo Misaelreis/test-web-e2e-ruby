@@ -45,6 +45,8 @@ jobs:
       - run:
           name: run tests
           command: |
+            gem install bundler:2.0.2
+
             mkdir /tmp/test-results
             TEST_FILES="$(circleci tests glob "spec/**/*_spec.rb" | \
               circleci tests split --split-by=timings)"
