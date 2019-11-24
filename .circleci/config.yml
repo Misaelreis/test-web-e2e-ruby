@@ -37,6 +37,7 @@ jobs:
           key: v1-dependencies-{{ checksum "Gemfile.lock" }}
 
       # Database setup
+        gem install bundler:2.0.2
       - run: bundle exec rake db:create
       - run: bundle exec rake db:schema:load
 
